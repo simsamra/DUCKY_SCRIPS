@@ -1,0 +1,18 @@
+#include <Keyboard.h>
+
+void setup() {
+  Keyboard.begin();
+
+  delay(500);  // Give Windows time to recognize the keyboard
+
+  Keyboard.print("Classroom1");
+  delay(500);
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);
+
+
+  Keyboard.end();
+}
+
+void loop() {
+}
